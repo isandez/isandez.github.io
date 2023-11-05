@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d178fa; /* Cambia el color de fondo a #d178fa */
+  transition: 1s;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container .signinForm {
+  position: relative;
+  top: 0;
+  width: 120%;
+  height: auto;
+  z-index: 1;
+  transition: 0.5s;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  transition-delay: 0.5s;
+  padding: 20px;
+}
+
+.signinForm h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.signinForm input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #333;
+}
+
+.submit-link {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #D67BFF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.submit-link:hover {
+  background-color: #c247fc;
+}
+
+
+.signinForm form a
+{
+    color: #333;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+}

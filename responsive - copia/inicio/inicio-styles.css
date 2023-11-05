@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    max-height: 1200px;
+    background: #e1e0f0;
+}
+
+.sidebar{
+    z-index: 1000;
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    background: #928fd4;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .sidebar {
+        width: 60px;
+    }
+}
+
+
+.sidebar ul{
+    position: relative;
+    height: 100vh;
+}
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background: #7c78d6;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.sidebar ul li.logo{
+    margin: 0px;
+    height: 95px;
+
+}
+
+.sidebar ul li.logo:hover{
+    background: #928fd4;
+}
+
+.sidebar ul li.logo .icon{
+    font-size: 2em;
+}
+
+.sidebar ul li.logo .text{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.bottom{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom .imgBx{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bottom .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+img{
+    max-width: 100%;
+}
+
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.container-items {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 90px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    flex: 1 0 200px;
+    margin: 10px;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        flex: 1 0 40%;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .item {
+        flex: 1 0 100%;
+        max-width: 300%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar ul li a .icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 60px;
+        height: 80px;
+        font-size: 2.0em;
+        color: #333;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+.sidebar ul li a .text{
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+    .item {
+        flex: 1 0 200%;
+        max-width: 300%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sidebar ul li a .icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 60px;
+        height: 55px;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+
+}
+
+@media screen and (max-width: 425px){
+.sidebar ul li a .text{
+    position: relative;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+    .item {
+        flex: 1 0 300%;
+        max-width: 300%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px) {
+    .item {
+        flex: 1 0 600%;
+        max-width: 900%;
+    }
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    margin: 30px;
+    left: 0;
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger button {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    color: #333;
+
+}
+
+.hamburger i {
+    height: 10px;
+    font-size: 25px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        transition: width 0.5s;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
